@@ -24,16 +24,16 @@
 CRGB leds[NUM_LEDS];
 
 void setup() { 
-	FastLED.addLeds<WS2812,DATA_PIN,RGB>(leds,NUM_LEDS);
-	FastLED.setBrightness(80);
+  FastLED.addLeds<WS2812,DATA_PIN,RGB>(leds,NUM_LEDS);
+  FastLED.setBrightness(80);
 }
 
 void loop() { 
   // First tower segment
   for (int i = 0; i < 6; i ++) {
-	  leds[i] = CRGB(200, 0, 0);
+    leds[i] = CRGB(200, 0, 0);
   }
-	FastLED.show(); 
+  FastLED.show(); 
   delay(1000);
 
   // Second tower segment
@@ -53,5 +53,4 @@ void loop() {
   FastLED.clear();
   FastLED.show();
   delay(1000);
-
 }
