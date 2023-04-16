@@ -24,14 +24,14 @@
 CRGB leds[NUM_LEDS];
 
 void setup() { 
-	FastLED.addLeds<WS2812,DATA_PIN,RGB>(leds,NUM_LEDS);
-	FastLED.setBrightness(80);
+  FastLED.addLeds<WS2812,DATA_PIN,RGB>(leds,NUM_LEDS);
+  FastLED.setBrightness(80);
 }
 
 void loop() { 
   // Set the first LED in the chain
-	leds[0] = CRGB(200, 0, 0);
-	FastLED.show(); 
+  leds[0] = CRGB(200, 0, 0);
+  FastLED.show(); 
   delay(1000);
 
   // Set LED #2
